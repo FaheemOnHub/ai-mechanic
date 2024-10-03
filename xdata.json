@@ -1,0 +1,410 @@
+[
+  {
+    "OBD_CODE": "P0001",
+    "Meaning": "Fuel Volume Regulator Control Circuit/Open",
+    "Cause": [
+      "Open or short in the fuel volume control regulator circuit",
+      "Faulty fuel pressure regulator",
+      "Damaged wiring"
+    ],
+    "Symptoms": [
+      "Check engine light on",
+      "Engine stalling or poor performance",
+      "Difficulty starting the engine"
+    ]
+  },
+  {
+    "OBD_CODE": "P0002",
+    "Meaning": "Fuel Volume Regulator Control Circuit Range/Performance",
+    "Cause": [
+      "Faulty fuel pressure regulator",
+      "Incorrect fuel pressure",
+      "Wiring issues"
+    ],
+    "Symptoms": [
+      "Poor fuel economy",
+      "Engine hesitation",
+      "Check engine light on"
+    ]
+  },
+  {
+    "OBD_CODE": "P0003",
+    "Meaning": "Fuel Volume Regulator Control Circuit Low",
+    "Cause": [
+      "Low fuel pressure",
+      "Faulty fuel pressure regulator",
+      "Wiring problems"
+    ],
+    "Symptoms": [
+      "Engine misfire",
+      "Poor acceleration",
+      "Reduced fuel efficiency"
+    ]
+  },
+  {
+    "OBD_CODE": "P0004",
+    "Meaning": "Fuel Volume Regulator Control Circuit High",
+    "Cause": [
+      "Excessive fuel pressure",
+      "Defective fuel pressure regulator",
+      "Wiring issues"
+    ],
+    "Symptoms": [
+      "Engine runs rough",
+      "Excessive fuel consumption",
+      "Check engine light"
+    ]
+  },
+  {
+    "OBD_CODE": "P0005",
+    "Meaning": "Fuel Shutoff Valve 'A' Control Circuit/Open",
+    "Cause": [
+      "Open circuit in the fuel shutoff valve wiring",
+      "Faulty fuel shutoff valve",
+      "Wiring harness damage"
+    ],
+    "Symptoms": ["Engine won't start", "No fuel pressure", "Check engine light"]
+  },
+  {
+    "OBD_CODE": "P0006",
+    "Meaning": "Fuel Shutoff Valve 'A' Control Circuit Low",
+    "Cause": [
+      "Faulty fuel shutoff valve",
+      "Low voltage in the control circuit",
+      "Damaged wiring"
+    ],
+    "Symptoms": ["Engine stalling", "Poor fuel efficiency", "No fuel pressure"]
+  },
+  {
+    "OBD_CODE": "P0007",
+    "Meaning": "Fuel Shutoff Valve 'A' Control Circuit High",
+    "Cause": [
+      "Excess voltage in the fuel shutoff valve circuit",
+      "Faulty fuel shutoff valve",
+      "Wiring issues"
+    ],
+    "Symptoms": [
+      "Engine running rough",
+      "Fuel pressure too high",
+      "Check engine light"
+    ]
+  },
+  {
+    "OBD_CODE": "P0008",
+    "Meaning": "Engine Position System Performance",
+    "Cause": [
+      "Timing chain or belt wear",
+      "Faulty camshaft or crankshaft sensor",
+      "Engine timing issues"
+    ],
+    "Symptoms": [
+      "Engine misfires",
+      "Poor acceleration",
+      "Check engine light on"
+    ]
+  },
+  {
+    "OBD_CODE": "P0009",
+    "Meaning": "Engine Position System Performance",
+    "Cause": [
+      "Timing chain wear",
+      "Faulty camshaft or crankshaft sensor",
+      "Timing misalignment"
+    ],
+    "Symptoms": ["Engine stalling", "Rough idle", "Check engine light on"]
+  },
+  {
+    "OBD_CODE": "P0300",
+    "Meaning": "Random/Multiple Cylinder Misfire Detected",
+    "Cause": [
+      "Faulty spark plugs or wires",
+      "Ignition coil issues",
+      "Fuel delivery problems",
+      "Vacuum leaks",
+      "Engine timing issues"
+    ],
+    "Symptoms": [
+      "Rough engine idle",
+      "Poor acceleration",
+      "Check Engine Light (CEL) illuminated",
+      "Stalling",
+      "Excessive exhaust emissions"
+    ]
+  },
+  {
+    "OBD_CODE": "P0301",
+    "Meaning": "Cylinder 1 Misfire Detected",
+    "Cause": [
+      "Worn or damaged spark plug in cylinder 1",
+      "Faulty ignition coil for cylinder 1",
+      "Fuel injector issue in cylinder 1",
+      "Low engine compression in cylinder 1"
+    ],
+    "Symptoms": [
+      "Rough engine operation",
+      "Reduced power",
+      "CEL illuminated",
+      "Increased fuel consumption"
+    ]
+  },
+  {
+    "OBD_CODE": "P0302",
+    "Meaning": "Cylinder 2 Misfire Detected",
+    "Cause": [
+      "Faulty spark plug in cylinder 2",
+      "Ignition coil failure for cylinder 2",
+      "Fuel delivery issue in cylinder 2",
+      "Vacuum leak affecting cylinder 2"
+    ],
+    "Symptoms": [
+      "Engine shaking or vibration",
+      "Loss of power",
+      "CEL illuminated",
+      "Increased emissions"
+    ]
+  },
+  {
+    "OBD_CODE": "P0303",
+    "Meaning": "Cylinder 3 Misfire Detected",
+    "Cause": [
+      "Faulty spark plug in cylinder 3",
+      "Defective ignition coil for cylinder 3",
+      "Fuel injector malfunction in cylinder 3",
+      "Engine mechanical issue (e.g., low compression)"
+    ],
+    "Symptoms": [
+      "Hesitation while driving",
+      "Rough idle",
+      "CEL illuminated",
+      "Poor fuel economy"
+    ]
+  },
+  {
+    "OBD_CODE": "P0304",
+    "Meaning": "Cylinder 4 Misfire Detected",
+    "Cause": [
+      "Bad spark plug or wire in cylinder 4",
+      "Ignition system failure for cylinder 4",
+      "Faulty fuel injector",
+      "Internal engine issues (e.g., valve problems)"
+    ],
+    "Symptoms": [
+      "Noticeable engine vibration",
+      "CEL illuminated",
+      "Decreased power",
+      "Higher fuel consumption"
+    ]
+  },
+  {
+    "OBD_CODE": "P0305",
+    "Meaning": "Cylinder 5 Misfire Detected",
+    "Cause": [
+      "Damaged spark plug or wire in cylinder 5",
+      "Defective ignition coil for cylinder 5",
+      "Fuel delivery problem to cylinder 5",
+      "Mechanical engine problem (e.g., compression issue)"
+    ],
+    "Symptoms": [
+      "Engine misfiring or stumbling",
+      "CEL illuminated",
+      "Rough idle",
+      "Poor acceleration"
+    ]
+  },
+  {
+    "OBD_CODE": "P0306",
+    "Meaning": "Cylinder 6 Misfire Detected",
+    "Cause": [
+      "Faulty spark plug in cylinder 6",
+      "Ignition coil failure",
+      "Fuel injector problem",
+      "Mechanical engine issues (e.g., valve or compression problems)"
+    ],
+    "Symptoms": [
+      "Engine misfires",
+      "CEL illuminated",
+      "Loss of engine power",
+      "Increased emissions"
+    ]
+  },
+  {
+    "OBD_CODE": "P0010",
+    "Meaning": "A Camshaft Position Actuator Circuit",
+    "Cause": [
+      "Faulty camshaft position actuator",
+      "Wiring issues",
+      "Open or short in actuator circuit"
+    ],
+    "Symptoms": [
+      "Check Engine Light (CEL) illuminated",
+      "Poor fuel economy",
+      "Reduced engine performance"
+    ]
+  },
+  {
+    "OBD_CODE": "P0011",
+    "Meaning": "A Camshaft Position – Timing Over-Advanced or System Performance",
+    "Cause": [
+      "Faulty camshaft position actuator",
+      "Timing chain issues",
+      "Low engine oil levels"
+    ],
+    "Symptoms": ["CEL illuminated", "Rough engine idle", "Reduced power"]
+  },
+  {
+    "OBD_CODE": "P0012",
+    "Meaning": "A Camshaft Position – Timing Over-Retarded",
+    "Cause": [
+      "Faulty camshaft position sensor",
+      "Oil flow problems",
+      "Variable valve timing system failure"
+    ],
+    "Symptoms": [
+      "CEL illuminated",
+      "Poor acceleration",
+      "Increased fuel consumption"
+    ]
+  },
+  {
+    "OBD_CODE": "P0013",
+    "Meaning": "B Camshaft Position – Actuator Circuit",
+    "Cause": [
+      "Defective camshaft position actuator",
+      "Wiring issues",
+      "Faulty PCM"
+    ],
+    "Symptoms": [
+      "CEL illuminated",
+      "Engine running poorly",
+      "Reduced fuel efficiency"
+    ]
+  },
+  {
+    "OBD_CODE": "P0014",
+    "Meaning": "B Camshaft Position – Timing Over-Advanced or System Performance",
+    "Cause": [
+      "Faulty timing chain",
+      "Low oil pressure",
+      "Variable valve timing issues"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine knocking noises", "Rough idle"]
+  },
+  {
+    "OBD_CODE": "P0015",
+    "Meaning": "B Camshaft Position – Timing Over-Retarded",
+    "Cause": [
+      "Oil control valve problems",
+      "Faulty camshaft position sensor",
+      "Timing chain issues"
+    ],
+    "Symptoms": ["CEL illuminated", "Reduced engine power", "Poor fuel economy"]
+  },
+  {
+    "OBD_CODE": "P0016",
+    "Meaning": "Crankshaft Position – Camshaft Position Correlation",
+    "Cause": [
+      "Misaligned timing belt or chain",
+      "Crankshaft position sensor failure",
+      "Camshaft position sensor failure"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine stalling", "Poor acceleration"]
+  },
+  {
+    "OBD_CODE": "P0017",
+    "Meaning": "Crankshaft Position – Camshaft Position Correlation",
+    "Cause": [
+      "Timing chain/belt misalignment",
+      "Sensor issues",
+      "Wiring problems"
+    ],
+    "Symptoms": [
+      "Engine runs poorly",
+      "CEL illuminated",
+      "Reduced fuel economy"
+    ]
+  },
+  {
+    "OBD_CODE": "P0018",
+    "Meaning": "Crankshaft Position – Camshaft Position Correlation",
+    "Cause": [
+      "Engine timing issue",
+      "Faulty crankshaft or camshaft position sensors",
+      "Wiring faults"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine hesitation", "Poor performance"]
+  },
+  {
+    "OBD_CODE": "P0019",
+    "Meaning": "Crankshaft Position – Camshaft Position Correlation",
+    "Cause": [
+      "Timing belt misalignment",
+      "Defective sensors",
+      "Oil flow restriction"
+    ],
+    "Symptoms": ["CEL illuminated", "Poor acceleration", "Engine vibration"]
+  },
+  {
+    "OBD_CODE": "P0020",
+    "Meaning": "A Camshaft Position Actuator Circuit",
+    "Cause": ["Wiring issues", "Faulty actuator", "Low oil pressure"],
+    "Symptoms": ["CEL illuminated", "Rough idle", "Reduced power"]
+  },
+  {
+    "OBD_CODE": "P0021",
+    "Meaning": "A Camshaft Position – Timing Over-Advanced or System Performance",
+    "Cause": [
+      "Timing chain misalignment",
+      "Low oil pressure",
+      "Camshaft actuator failure"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine knocking", "Poor acceleration"]
+  },
+  {
+    "OBD_CODE": "P0022",
+    "Meaning": "A Camshaft Position – Timing Over-Retarded",
+    "Cause": [
+      "Faulty camshaft actuator",
+      "Oil control valve failure",
+      "Wiring issues"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine runs rough", "Poor fuel efficiency"]
+  },
+  {
+    "OBD_CODE": "P0023",
+    "Meaning": "B Camshaft Position – Actuator Circuit",
+    "Cause": ["Wiring issues", "Camshaft actuator failure", "PCM fault"],
+    "Symptoms": ["CEL illuminated", "Engine runs poorly", "Reduced performance"]
+  },
+  {
+    "OBD_CODE": "P0024",
+    "Meaning": "B Camshaft Position – Timing Over-Advanced or System Performance",
+    "Cause": ["Timing chain issues", "Low oil pressure", "Actuator failure"],
+    "Symptoms": ["CEL illuminated", "Knocking noise", "Poor engine performance"]
+  },
+  {
+    "OBD_CODE": "P0025",
+    "Meaning": "B Camshaft Position – Timing Over-Retarded",
+    "Cause": [
+      "Faulty timing chain",
+      "Actuator issues",
+      "Oil pressure problems"
+    ],
+    "Symptoms": ["CEL illuminated", "Engine stalls", "Reduced power"]
+  },
+  {
+    "OBD_CODE": "P0026",
+    "Meaning": "Intake Valve Control Solenoid Circuit Range/Performance",
+    "Cause": [
+      "Faulty solenoid",
+      "Oil control valve malfunction",
+      "Low oil pressure"
+    ],
+    "Symptoms": ["CEL illuminated", "Rough idle", "Reduced power"]
+  },
+  {
+    "OBD_CODE": "P0027",
+    "Meaning": "Exhaust Valve Control Solenoid Circuit Range/Performance",
+    "Cause": ["Faulty solenoid", "Oil control valve failure", "Wiring issues"],
+    "Symptoms": ["CEL illuminated", "Poor fuel economy", "Engine stalling"]
+  }
+]
