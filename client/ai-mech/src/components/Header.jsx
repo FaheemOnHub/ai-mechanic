@@ -41,7 +41,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 // import { ModeToggle } from "./ui/";
 import { Car, Menu } from "lucide-react";
-
+import { Github } from "lucide-react";
 const Header = () => {
   return (
     <header className="border-b">
@@ -65,6 +65,16 @@ const Header = () => {
             </Button>
             
           </nav> */}
+          {
+            <nav>
+              <Link
+                to="https://github.com/FaheemOnHub/ai-mechanic"
+                target="blank"
+              >
+                <Github />
+              </Link>
+            </nav>
+          }
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-6 w-6" />
           </Button>
