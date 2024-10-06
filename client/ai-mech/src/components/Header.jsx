@@ -53,7 +53,7 @@ const Header = () => {
               Vehicle Mechanic Assistant
             </span>
           </Link>
-          <nav className="hidden md:flex items-center space-x-4">
+          {/* <nav className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" asChild>
               <Link to="/">Home</Link>
             </Button>
@@ -63,8 +63,8 @@ const Header = () => {
             <Button variant="ghost" asChild>
               <Link to="/how-it-works">How it works</Link>
             </Button>
-            {/* <ModeToggle /> */}
-          </nav>
+            
+          </nav> */}
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-6 w-6" />
           </Button>
@@ -80,7 +80,7 @@ const Header = () => {
             artificial intelligence technology.
           </p>
           <Button size="lg" asChild>
-            <Link to="/">Get Started</Link>
+            <Link to="/how-it-works">How it works</Link>
           </Button>
         </div>
       </div>
