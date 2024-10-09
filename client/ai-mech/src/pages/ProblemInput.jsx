@@ -89,32 +89,75 @@
 
 // export default ProblemInput;
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 import DynamicCarDiagnosis from "../components/DynamicCarDiagnosis";
 
 const ProblemInput = () => {
   const [userInput, setUserInput] = useState("");
   const [obdCode, setObdCode] = useState("");
+  const [image, setImage] = useState(null);
+  const fileInputRef = useRef(null);
   const [conversationHistory, setConversationHistory] = useState(() => {
     const savedHistory = localStorage.getItem("conversationHistory");
     return savedHistory ? JSON.parse(savedHistory) : [];
   });
   // const [conversationHistory, setConversationHistory] = useState([]);
-
+  const handleImageChange = (e) => {
+    setImage(e.target.files[0]);
+  };
   const handleSubmit = async () => {
     if (!userInput.trim()) return;
-
     const newUserMessage = {
       role: "user",
       content: obdCode ? `${userInput} (OBD Codes: ${obdCode})` : userInput,
     };
     const updatedHistory = [...conversationHistory, newUserMessage];
     setConversationHistory(updatedHistory);
+    if (image !== null) {
+      const formData = new FormData();
+      formData.append("image", image);
+      formData.append("userInput", newUserMessage.content);
+      formData.append("conversationHistory", JSON.stringify(updatedHistory));
+
+      try {
+        const response = await axios.post(
+          "http://localhost:3000/query-with-image",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data", // Ensure correct content type
+            },
+          }
+        );
+        const assistantResponse = {
+          role: "assistant",
+          content: response.data.response,
+        };
+        setConversationHistory([...updatedHistory, assistantResponse]);
+
+        setUserInput("");
+        setObdCode("");
+        setImage(null);
+        if (fileInputRef.current) {
+          fileInputRef.current.value = null;
+        }
+      } catch (error) {
+        console.error("Error fetching response from server with image:", error);
+      }
+      return;
+    }
+    // const newUserMessage = {
+    //   role: "user",
+    //   content: obdCode ? `${userInput} (OBD Codes: ${obdCode})` : userInput,
+    // };
+    // const updatedHistory = [...conversationHistory, newUserMessage];
+    // setConversationHistory(updatedHistory);
 
     try {
       const response = await axios.post("http://localhost:3000/query", {
@@ -183,7 +226,17 @@ const ProblemInput = () => {
               placeholder="Enter the details of your vehicle's issue..."
               rows={4}
             />
+
             <div className="flex flex-col lg:flex-row justify-between max-w-2xl space-y-3">
+              <div className="">
+                <Label htmlFor="image">Image Upload</Label>
+                <Input
+                  id="image"
+                  type="file"
+                  onChange={handleImageChange}
+                  ref={fileInputRef}
+                />
+              </div>
               <Button onClick={handleSubmit}>Submit</Button>
               <Button onClick={clearLocalStorage}>Clear Session</Button>
             </div>
