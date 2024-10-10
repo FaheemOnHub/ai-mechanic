@@ -109,6 +109,7 @@ app.post("/query-with-image", upload.single("image"), async (req, res) => {
         2. Possible causes of the issue.
         3. Suggested diagnostic steps.
         4. Recommended solutions.
+        Important: Incase the user uploads images that are not related to vehicles , answer that "I am trained to answer questions related to vehicles only"
          If the user asks about the image or its description, make sure to give detailed and accurate information about the components in the image, and avoid saying that you cannot analyze the image directly.
         Make your response clear and helpful, and avoid using overly technical language. If the user's input doesn't seem to match any of the provided OBD codes, please say so and offer general automotive troubleshooting advice instead.`,
           },

@@ -100,6 +100,7 @@ import DynamicCarDiagnosis from "../components/DynamicCarDiagnosis";
 
 const ProblemInput = () => {
   const [userInput, setUserInput] = useState("");
+  const [loader, setLoader] = useState(false);
   const [obdCode, setObdCode] = useState("");
   const [image, setImage] = useState(null);
   const fileInputRef = useRef(null);
@@ -108,11 +109,13 @@ const ProblemInput = () => {
     return savedHistory ? JSON.parse(savedHistory) : [];
   });
   // const [conversationHistory, setConversationHistory] = useState([]);
+
   const handleImageChange = (e) => {
     setImage(e.target.files[0]);
   };
   const handleSubmit = async () => {
     if (!userInput.trim()) return;
+    setLoader(true);
     const newUserMessage = {
       role: "user",
       content: obdCode ? `${userInput} (OBD Codes: ${obdCode})` : userInput,
@@ -144,10 +147,12 @@ const ProblemInput = () => {
         setUserInput("");
         setObdCode("");
         setImage(null);
+        setLoader(false);
         if (fileInputRef.current) {
           fileInputRef.current.value = null;
         }
       } catch (error) {
+        setLoader(false);
         console.error("Error fetching response from server with image:", error);
       }
       return;
@@ -173,12 +178,15 @@ const ProblemInput = () => {
 
       setUserInput("");
       setObdCode("");
+      setLoader(false);
     } catch (error) {
+      setLoader(false);
       console.error("Error fetching response from server:", error);
     }
   };
   const clearLocalStorage = () => {
     localStorage.removeItem("conversationHistory");
+    setConversationHistory([]);
   };
   useEffect(() => {
     localStorage.setItem(
@@ -186,6 +194,7 @@ const ProblemInput = () => {
       JSON.stringify(conversationHistory)
     ); // Fix: Save as stringified JSON
   }, [conversationHistory]);
+
   return (
     <div className="max-w-3xl mx-auto">
       {conversationHistory.length > 0 && (
@@ -206,8 +215,16 @@ const ProblemInput = () => {
               </CardContent>
             </Card>
           ))}
+          {loader ? (
+            <div className="flex justify-center items-center">
+              <span className="loading loading-dots loading-lg"></span>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       )}
+
       <Card>
         <CardHeader>
           <CardTitle>Describe your vehicle problem</CardTitle>
@@ -246,5 +263,4 @@ const ProblemInput = () => {
     </div>
   );
 };
-
 export default ProblemInput;
