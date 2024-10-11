@@ -130,7 +130,7 @@ const ProblemInput = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:3000/query-with-image",
+          "https://ai-mechanic.onrender.com/query-with-image",
           formData,
           {
             headers: {
@@ -165,10 +165,13 @@ const ProblemInput = () => {
     // setConversationHistory(updatedHistory);
 
     try {
-      const response = await axios.post("http://localhost:3000/query", {
-        userInput: newUserMessage.content,
-        conversationHistory: updatedHistory,
-      });
+      const response = await axios.post(
+        "https://ai-mechanic.onrender.com/query",
+        {
+          userInput: newUserMessage.content,
+          conversationHistory: updatedHistory,
+        }
+      );
 
       const assistantResponse = {
         role: "assistant",
