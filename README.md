@@ -14,7 +14,7 @@ This project is a **vehicle diagnostic assistant** powered by **semantic search 
 - **Cosine Semantic Search**: Uses cosine similarity to compare user inputs (text and image descriptions) with OBD-II code embeddings, providing the most relevant diagnostic information.
 - **Image Processing**: Allows users to upload images related to vehicle issues, which are processed and analyzed to provide context-specific diagnostic recommendations.
 - **Natural Language Processing (NLP)**: Leverages OpenAI’s GPT model to generate human-readable diagnostic reports, including explanations, causes, symptoms, and recommended solutions.
-- **OBD-II Code Database**: A MongoDB database stores OBD-II codes, along with their meanings, causes, symptoms, and embeddings, to facilitate fast and accurate semantic search.
+- **OBD-II Code Database**: A  database stores nearly 1000 OBD-II codes, along with their meanings, causes, symptoms, and embeddings, to facilitate fast and accurate semantic search.
 - **Azure AI Integration**: Uses Azure’s AI services to generate text embeddings and process vehicle-related images for enhanced diagnostics.
 
 ## Technologies Used
