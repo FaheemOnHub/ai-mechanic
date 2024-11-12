@@ -12,4 +12,5 @@ The engine of my 2018 Ford Mustang seems to misfire when I accelerate. I’ve al
 
 Problem Statement 4:
 I uploaded an image of a clutch kit from my 2013 Nissan Altima. Can you analyze the image and provide insights regarding its potential issues?
-![Uploading VAL52254010.jpg…]()
+![VAL52254010](https://github.com/user-attachments/assets/df55cad1-e802-43f0-ab27-927b5171abd6)
+
