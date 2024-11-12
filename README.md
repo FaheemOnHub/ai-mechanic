@@ -1,4 +1,11 @@
 # Vehicle Diagnostic Assistant with Semantic Search for OBD-II Codes
+# How-it-works
+![image](https://github.com/user-attachments/assets/67ec2cfd-9782-486a-91b4-aac50c16c6d6)
+# DEMO
+# Problem-Statement-1: 
+I am experiencing issues with my clutch switch on a 2012 Honda Civic. The car doesn’t start unless I press the clutch, even though it used to start without pressing the clutch pedal (OBD Codes: P0704)
+# Solution:
+<img width="609" alt="Screenshot 2024-11-12 at 8 27 41 PM" src="https://github.com/user-attachments/assets/e7b6a704-49cc-4a93-9143-25e2b12678e4">
 
 This project is a **vehicle diagnostic assistant** powered by **semantic search techniques** to process **OBD-II (On-Board Diagnostics) codes**. The assistant helps users troubleshoot automotive issues by analyzing their vehicle problems, matching them with relevant OBD-II codes, and providing detailed diagnostics, including possible causes and solutions. The system also integrates image recognition to analyze vehicle-related images for additional diagnostic insights.
 
@@ -69,38 +76,6 @@ Triggers a batch process to embed and insert OBD-II codes into the database.
 3. POST /query-with-image
 Accepts an image file and user input to analyze the image and provide diagnostic recommendations based on both image content and text.
 
-Request Body:
 
-json
-
-{
-  "userInput": "Problem description",
-  "conversationHistory": [ { "role": "user", "content": "Previous conversation" }]
-}
-Response:
-
-json
-Copy code
-{
-  "response": "Generated diagnostic information"
-}
-4. POST /query
-Processes a user input query without an image and provides relevant OBD-II diagnostic information.
-
-Request Body:
-
-json
-
-{
-  "userInput": "Problem description",
-  "conversationHistory": [ { "role": "user", "content": "Previous conversation" }]
-}
-Response:
-
-json
-
-{
-  "response": "Generated diagnostic information"
-}
 
 
